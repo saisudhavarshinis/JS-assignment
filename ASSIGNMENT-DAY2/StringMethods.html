@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            String Methods.....
+        </title>
+    </head>
+    <body>
+        <script>
+            var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            console.log(txt);
+            var sln = txt.length;
+            console.log(sln);
+            var str = "Please locate where 'locate' occurs!";
+            console.log(str);
+            var pos = str.indexOf("locate");
+            console.log(pos);
+            var pos = str.lastIndexOf("locate");
+            console.log(pos);
+            var pos = str.lastIndexOf("John");
+            console.log(pos);
+            var pos = str.indexOf("locate", 15);
+            console.log(pos);
+            var pos = str.lastIndexOf("locate", 15);
+            console.log(pos);
+            var pos = str.search("locate");
+            console.log(pos);
+            var str = "Apple, Banana, Kiwi";
+            var res = str.slice(7, 13);
+            console.log(res);
+            var str = "Apple, Banana, Kiwi";
+            var res = str.slice(-12, -6);
+            console.log(res);
+            var res = str.slice(7);
+            console.log(res);
+            var res = str.slice(-12);
+            console.log(res);
+            var res = str.substring(7, 13);
+            console.log(res);
+            var res = str.substr(7, 6);
+            console.log(res);
+            var res = str.substr(15);
+            console.log(res);
+            var res = str.substr(-4);
+            console.log(res);
+        </script>
+    </body>
+</html>

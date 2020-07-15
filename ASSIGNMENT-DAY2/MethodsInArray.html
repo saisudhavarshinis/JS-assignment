@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+           METHODS OF ARRAY
+        </title>
+    </head>
+    <body>
+        <script>
+            var arr=["1","2","3","4","5"];
+            console.log(arr);
+            console.log(arr.copyWithin(4,1)); 
+            /*The copyWithin() method copies array elements to another 
+            position in the array overwriting the existing Values.*/
+
+            var t=arr.entries();
+            for (i of t){
+                console.log(i);
+            }
+        /*The entries() method returns an array Iterator 
+        object with key/value pairs.*/
+
+        console.log(arr.every(c));
+        function c(num){
+                return num>0;
+        }
+        /* The every() method check if all the  elements pass a test,
+        provided as a function. This method execures the function once for
+        each element present in the array.*/
+
+        console.log(arr.fill("0"));
+
+        var f=[30,40,50,55,56,57,58]
+        console.log(f.filter(d));
+        function d(f){
+            return f>55;
+        }
+        
+        console.log(f.find(fun));
+        function fun(f){
+            return f>50;
+        }
+
+        console.log(f.findIndex(car));
+        function car(f){
+            return f>30;
+        }
+
+        console.log(f.forEach(bus));
+        function bus(i,j){
+            console.log(j +":"+i);
+        }
+
+        console.log(f.pop());
+        var f1=f.push(58);
+        console.log(f1);
+        console.log(f);
+        console.log(f.slice(2,6));
+        var f2=[30,40,50,55,56,57,58]
+        f2.splice(2,0,"Prasad","Sai");
+        console.log(f2);
+        console.log(f2.reverse());
+        console.log(f2.toString());
+        
+        </script>
+    </body>
+</html>
