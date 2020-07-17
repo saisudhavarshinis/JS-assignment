@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MARK AND GRADE</title>
+</head>
+<body>
+    <script>
+        console.log('Using Conditional statements');
+        var mark=prompt("Enter the mark");
+        var grade;
+        if(mark>=75&& mark<=100)
+        {
+            grade='A';
+        }
+        else if(mark>=50&& mark<75)
+        {
+            grade='B';
+        }
+        else if(mark>=25 && mark<50)
+        {
+            grade='C';
+        }
+        else{
+            grade='Fail';
+        }
+
+        console.log(`The mark is ${mark} and the grade is ${grade}`);
+    </script>
+</body>
+</html>

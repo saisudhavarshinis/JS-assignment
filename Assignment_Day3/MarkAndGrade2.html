@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MARK AND GRADE2</title>
+</head>
+<body>
+    <script>
+        console.log('Using switch case');
+        var mark=prompt("Enter the mark");
+        var grade;
+        switch(true)
+        {
+            case (mark>=75&& mark<=100):
+            {
+                grade='A';
+                break;
+            }
+            case (mark>=50&& mark<75):
+            {
+                grade='B';
+                break;
+            }
+           case (mark>=25 && mark<50):
+            {
+                grade='C';
+                break;
+            }
+           default:
+            {
+                grade='Fail';
+            }
+        }
+
+        console.log(`The mark is ${mark} and the grade is ${grade}`);
+    </script>
+</body>
+</html>
+           
+        
