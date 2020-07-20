@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>
+            CALCULATOR
+        </title>
+    </head>
+    <body>
+        <script>
+            let oper=prompt("Enter an operator");
+            if(oper=="sqrt")
+            {
+                var num=prompt("Enter a number:");
+                console.log(Math.sqrt(num));
+            }
+            else{
+                var a=prompt("Enter a number1:");
+                var b=prompt("Enter a number2:");
+                if(oper=="+")
+                {   var res= +a + +b;
+                    console.log(res);
+                }
+                else if(oper=="-")
+                {
+                    var res= +a - +b;
+                    console.log(Math.abs(res));
+                }
+                else if(oper=="*")
+                {
+                    var res= a * b;
+                    console.log(res);
+                }
+                else if(oper=="/")
+                {
+                    var res= a / b;
+                    console.log(res);
+             
+               }
+               else if(oper=="%")
+               {
+                var res= a % b;
+                    console.log(res);
+               }
+            }
+        </script>
+    </body>
+</html>

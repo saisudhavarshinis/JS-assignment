@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Destructuring...</title>
+    </head>
+    <body>
+        <script>
+            console.log("Before destructuring...");
+            const student={
+                name:"Helsinki",
+                age:"24",
+                projects:{
+                    dicegame:"Two player dice game using JavaScript"
+                }
+            }
+            console.log(student.name);
+            console.log(student.age);
+            console.log(student.projects.dicegame);
+
+            console.log("After destructuring...");
+            const{name,age,projects}=student;
+            console.log({name,age,projects});
+        </script>
+    </body>
+</html>

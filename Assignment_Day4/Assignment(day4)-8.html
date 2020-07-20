@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>YesORNO</title>
+    </head>
+    <body>
+        <script>
+            let ask=(ques,yes,no) => {
+                if(confirm(ques)) yes();
+                else no();
+            }
+            ask("Do you agree?" , yes =>{alert("You agreed")},no =>{alert("You cancelled the execution")});
+        </script>
+        
+    </body>
+</html>
