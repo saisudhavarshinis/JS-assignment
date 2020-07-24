@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name and Clock</title>
+    <h1 id="attribute">Welcome </h1>
+    <h4 id="time"></h4>
+</head>
+<body>
+    <script>
+        let name=prompt("Enter your name:")
+        const attr=document.getElementById("attribute");
+        attr.innerText+=` ${name} !!`;
+        attr.style.color=' wheat';
+        
+        const ctime= document.getElementById("time");
+        ctime.style.color=`wheat`;
+        attr.classList.toggle(document.body.style.backgroundColor='black');
+        function clock()
+            {
+                let date= new Date();
+                let time= date.toLocaleTimeString();
+                ctime.innerText=time;
+
+            }
+
+          setInterval(clock,1000);
+
+    </script>
+</body>
+</html>
